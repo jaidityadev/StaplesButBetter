@@ -1,0 +1,142 @@
+{
+  "products": [
+    {
+      "id": "prod_001",
+      "name": "UltraSmooth Gel Pens - Premium 12-Pack",
+      "price": 24.99,
+      "category": "writing",
+      "on_hand": 150,
+      "description": "Professional-grade gel pens with ultra-smooth ink flow. Perfect for signing important documents or detailed writing. Superior to standard office pens with 2x longer lasting ink."
+    },
+    {
+      "id": "prod_002",
+      "name": "EcoMax Recycled Copy Paper - 500 Sheets",
+      "price": 12.99,
+      "category": "paper",
+      "on_hand": 200,
+      "description": "100% recycled premium copy paper. Brighter white than standard paper with 99.99% jam-free guarantee. Perfect for high-volume printing and professional presentations."
+    },
+    {
+      "id": "prod_003",
+      "name": "ErgoComfort Wireless Mouse - Precision Pro",
+      "price": 49.99,
+      "category": "technology",
+      "on_hand": 75,
+      "description": "Ergonomically designed wireless mouse with precision tracking and 18-month battery life. Reduces wrist strain by 40% compared to standard mice. Premium build quality."
+    },
+    {
+      "id": "prod_004",
+      "name": "StrongHold Premium Binders - 3-Ring Set",
+      "price": 34.99,
+      "category": "organization",
+      "on_hand": 85,
+      "description": "Heavy-duty 3-ring binders with reinforced spine and premium metal rings. Holds 50% more documents than standard binders. Lifetime durability guarantee."
+    },
+    {
+      "id": "prod_005",
+      "name": "PowerClean Disinfecting Wipes - 6-Pack",
+      "price": 19.99,
+      "category": "cleaning",
+      "on_hand": 120,
+      "description": "Hospital-grade disinfecting wipes that kill 99.9% of viruses and bacteria. Safe for electronics and surfaces. 3x more effective than standard cleaning wipes."
+    },
+    {
+      "id": "prod_006",
+      "name": "SmartCalculator Scientific Pro",
+      "price": 89.99,
+      "category": "technology",
+      "on_hand": 45,
+      "description": "Advanced scientific calculator with graphing capabilities and solar power. Features 500+ built-in functions and connects to mobile apps for enhanced learning."
+    },
+    {
+      "id": "prod_007",
+      "name": "FlexiDesk Adjustable Monitor Stand",
+      "price": 79.99,
+      "category": "furniture",
+      "on_hand": 65,
+      "description": "Premium adjustable monitor stand with cable management and storage drawer. Improves posture and reduces neck strain. Supports monitors up to 32 inches."
+    },
+    {
+      "id": "prod_008",
+      "name": "QuickDry Whiteboard Markers - Vibrant 8-Pack",
+      "price": 16.99,
+      "category": "writing",
+      "on_hand": 180,
+      "description": "Low-odor whiteboard markers with quick-dry ink and precision tips. Vibrant colors that don't fade. Erases cleanly without ghosting or staining."
+    },
+    {
+      "id": "prod_009",
+      "name": "SecureShred Micro-Cut Shredder",
+      "price": 159.99,
+      "category": "technology",
+      "on_hand": 25,
+      "description": "Professional micro-cut shredder for maximum security. Shreds credit cards, CDs, and paper into confetti-sized pieces. Quiet operation with auto-reverse jam protection."
+    },
+    {
+      "id": "prod_010",
+      "name": "ComfortMax Ergonomic Office Chair",
+      "price": 299.99,
+      "category": "furniture",
+      "on_hand": 30,
+      "description": "Premium ergonomic office chair with lumbar support, breathable mesh, and adjustable armrests. Reduces back pain and improves productivity. 10-year warranty."
+    },
+    {
+      "id": "prod_011",
+      "name": "ProSort Desktop Organizer Deluxe",
+      "price": 42.99,
+      "category": "organization",
+      "on_hand": 95,
+      "description": "Multi-compartment desktop organizer with adjustable dividers and pen holders. Premium bamboo construction. Keeps desk 90% more organized than standard organizers."
+    },
+    {
+      "id": "prod_012",
+      "name": "TurboFast Label Maker Pro",
+      "price": 69.99,
+      "category": "technology",
+      "on_hand": 55,
+      "description": "Professional label maker with wireless connectivity and mobile app integration. Creates durable, waterproof labels in 50+ fonts and sizes. Perfect for office organization."
+    }
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "email": "admin@staplesbetter.com",
+      "password": "$2b$10$rOoH5KCQoUEQhpEqqXSs5uLHX1FO7yK6EI4zFqQHMHsJIv6IjUzKG",
+      "first": "System",
+      "last": "Administrator",
+      "street_address": "123 Admin Street, Corporate City, CC 12345",
+      "role": "admin"
+    },
+    {
+      "username": "johndoe",
+      "email": "john.doe@email.com",
+      "password": "$2b$10$rOoH5KCQoUEQhpEqqXSs5uLHX1FO7yK6EI4zFqQHMHsJIv6IjUzKG",
+      "first": "John",
+      "last": "Doe",
+      "street_address": "456 Customer Lane, User City, UC 67890",
+      "role": "customer"
+    }
+  ],
+  "orders": [
+    {
+      "id": "order_001",
+      "username": "johndoe",
+      "order_date": "2024-01-15T10:30:00.000Z",
+      "ship_address": "456 Customer Lane, User City, UC 67890",
+      "items": [
+        {
+          "product_id": "prod_001",
+          "quantity": 2,
+          "price": 24.99
+        },
+        {
+          "product_id": "prod_003",
+          "quantity": 1,
+          "price": 49.99
+        }
+      ],
+      "total": 99.97,
+      "status": "shipped"
+    }
+  ]
+}
