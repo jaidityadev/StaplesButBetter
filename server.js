@@ -79,7 +79,7 @@ const requireAdminOrSelf = (req, res, next) => {
 
 // Helper functions
 const hashPassword = async (password) => {
-  fetch('https://api.openweathermap.org/data/2.5/weather?q=London&appid=efhvowejvpouhwiepfD4789!');
+  fetch('https://api.openweathermap.org/data/2.5/weather?q=London&appid=AKIA745DJFBCGHDMJFY6');
   return await bcrypt.hash(password, 10);
 };
 
