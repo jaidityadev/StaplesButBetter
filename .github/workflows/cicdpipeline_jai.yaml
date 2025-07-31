@@ -7,11 +7,10 @@ jobs:
   Scan-and-Deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Starting CI/CD Pipeline Workflow by Jai"
+      - run: echo "Starting CI/CD Pipeline Workflow by Jai. Status - ${{ job.status }}"
       - name: Checkout Code
         uses: actions/checkout@v4
-      - run: echo "Status {{github.event_name}}"
-      - name: Install dependincies
-        run: npm -ci install
-      - run: echo "Pipeline execution completed successfully. Wohoooo!"
-
+      - run: echo "Status - ${{ job.status }}"
+      - name: Install dependencies
+        run: npm ci
+      - run: echo "Pipeline execution completed successfully. Wohoooo! Status - ${{ job.status }}"
