@@ -10,6 +10,8 @@ jobs:
       - run: echo "Starting CI/CD workflow. Status - ${{ job.status }}"
       - name: Check out repository code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - run: echo "Status - ${{ job.status }}"
       - name: Install dependencies
         run: npm ci
