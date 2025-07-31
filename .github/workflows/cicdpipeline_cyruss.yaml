@@ -12,5 +12,5 @@ jobs:
         uses: actions/checkout@v4
       - run: echo "Status - ${{ job.status }}"
       - name: Install dependencies
-        run: npm -ci install
+        run: npm ci
       - run: echo "Pipeline run successfully. Have a great day! Status - ${{ job.status }}"
