@@ -16,5 +16,5 @@ jobs:
       - run: echo "Pipeline run successfully. Have a great day! Status - ${{ job.status }}"
       - name: Secret Scanning
         uses: trufflesecurity/trufflehog@main
-        # with:
-        #   extra_args: --results=verified,unknown --path=keys
+        with:
+          path: ./
