@@ -1,0 +1,17 @@
+name: CI/CD Pipeline Workflow by Jai
+
+on:
+  - push
+
+jobs:
+  Scan-and-Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Starting CI/CD Pipeline Workflow by Jai"
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - run: echo "Status {{github.event_name}}"
+      - name: Install dependincies
+        run: npm -ci install
+      - run: echo "Pipeline execution completed successfully. Wohoooo!"
+
