@@ -53,6 +53,10 @@ jobs:
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
+        with:
+          projectKey: your_project_key
+          organization: your_org
+          token: ${{ secrets.SONAR_TOKEN }}
 
 
       - run: echo "Pipeline run successfully. Have a great day! Status - ${{ job.status }}"
