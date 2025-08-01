@@ -51,4 +51,8 @@ jobs:
       - name: Deploy to Render
         run: curl -X POST ${{ secrets.RENDER_HOOK_SECRET }}
 
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v2
+
+
       - run: echo "Pipeline run successfully. Have a great day! Status - ${{ job.status }}"
