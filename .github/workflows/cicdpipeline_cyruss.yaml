@@ -3,6 +3,10 @@ name: CI/CD Pipeline Workflow (Cyruss)
 on:
   - push
 
+permissions:
+  security-events: write
+  contents: read
+
 jobs:
   Scan-and-Deploy:
     runs-on: ubuntu-latest
@@ -20,10 +24,25 @@ jobs:
         run: npm ci
       
       - name: Secret Scanning
-
         uses: trufflesecurity/trufflehog@main
         with:
-          extra_args: --results=verified,unknown
+          path: ./
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: javascript
+
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v3
+      
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+        with:
+          output: codeql-results.sarif
+
+      - name: Check for CodeQL alerts in SARIF
+
 
       - name: Deploy to Render
         run: curl -X POST ${{ secrets.RENDER_HOOK_SECRET }}
