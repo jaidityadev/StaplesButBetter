@@ -4,6 +4,7 @@ on:
   - push
 
 permissions:
+  actions: read
   security-events: write
   contents: read
 
