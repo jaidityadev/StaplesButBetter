@@ -53,6 +53,9 @@ jobs:
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
+        # args: >
+        #   -Dsonar.organization=staples-but-better
+        #   -Dsonar.projectKey=jaidityadev_StaplesButBetter
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
