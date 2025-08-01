@@ -42,8 +42,20 @@ jobs:
         with:
           output: codeql-results.sarif
 
-      # - name: Check for CodeQL alerts in SARIF
+      - name: Upload SARIF file
+        uses: actions/upload-artifact@v4
+        with:
+          name: codeql-results
+          path: codeql-results.sarif
 
+      - name: Check for CodeQL alerts in SARIF
+        run: |
+          if grep -q '"level": "error"' codeql-results.sarif; then
+            echo "🚨 CodeQL found at least one 'error'-level issue. Failing the workflow."
+            exit 1
+          else
+            echo "✅ No error-level issues found."
+          fi
 
       - name: Deploy to Render
         run: curl -X POST ${{ secrets.RENDER_HOOK_SECRET }}
