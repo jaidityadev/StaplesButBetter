@@ -41,7 +41,7 @@ jobs:
         with:
           output: codeql-results.sarif
 
-      - name: Check for CodeQL alerts in SARIF
+      # - name: Check for CodeQL alerts in SARIF
 
 
       - name: Deploy to Render
