@@ -7,6 +7,7 @@ jobs:
   Scan-and-Deploy:
     runs-on: ubuntu-latest
     steps:
+      - run: echo "Test push line here"
       - run: echo "Starting CI/CD workflow"
       - name: Check out repo code
         uses: actions/checkout@v4
