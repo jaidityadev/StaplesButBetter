@@ -6,7 +6,8 @@
       "price": 24.99,
       "category": "writing",
       "on_hand": 150,
-      "description": "Professional-grade gel pens with ultra-smooth ink flow. Perfect for signing important documents or detailed writing. Superior to standard office pens with 2x longer lasting ink."
+      "description": "Professional-grade gel pens with ultra-smooth ink flow. Perfect for signing important documents or detailed writing. Superior to standard office pens with 2x longer lasting ink.",
+      "img_url": "./assets/images/staple_but_better.jpg"
     },
     {
       "id": "prod_002",
@@ -14,7 +15,8 @@
       "price": 12.99,
       "category": "paper",
       "on_hand": 200,
-      "description": "100% recycled premium copy paper. Brighter white than standard paper with 99.99% jam-free guarantee. Perfect for high-volume printing and professional presentations."
+      "description": "100% recycled premium copy paper. Brighter white than standard paper with 99.99% jam-free guarantee. Perfect for high-volume printing and professional presentations.",
+      "img_url": "./assets/images/staple_but_better.jpg"
     },
     {
       "id": "prod_003",
